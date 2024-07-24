@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio | Alexandre</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FavIcon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<script>    
+window.onload = function () {
+    //Quando botão é clicado
+    const btnClickEvent = (evt) => {
+        navigator.clipboard.writeText("aborgesgoncalves@gmail.com");
+
+        var msg = document.getElementById("copyFunction");
+        msg.className = "viewCopyMessage";
+      };
+
+      //Quando a animação acaba
+      document.getElementById("copyFunction").addEventListener("animationend", () => {
+          var msg = document.getElementById("copyFunction");
+          msg.className = "hide";
+      });
+
+      //Adiciona evento a N botões
+      document.getElementById("copy").addEventListener("click", btnClickEvent);
+      
+    };
+</script>
+<body>
+
+    <nav class="navBar"> 
+        <a href="#projetos">PROJETOS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#sobreMim">SOBRE</a>
+        <a>HOME</a>
+    </nav>
+
+    <section class="aboutMe">
+
+        <button class="scrollTop" onclick="backTop()">
+            <img src="./imgs/iconVoltar.png" alt="">
+        </button>
+
+        <h3 >Olá, me chamo Alexandre Borges Gonçalves</h3>
+        <div class="contatMePerfil">
+            <h1  id="h1Name" style="font-size: 45px; "> DESENVOLVEDOR  <br> FRONT-END </h1>   
+        <img src="./imgs/fotoPerfil.jpg" id="imgPerfil" style="margin-left: auto; margin-right: 60px;">
+        </div>
+        <div class="hide" id="copyFunction">
+            <p><b>Copiado Email para área de transferência!</b></p>
+            </div>
+        <a href="https://www.linkedin.com/in/alexandreborgesgonçalves/" target="_blank"><img src="./imgs/iconLinkedin.png" alt="foto do linkedin" ></a>
+        <a href="https://github.com/DevAlexandreBorges" target="_blank"><img src="./imgs/iconGithub.png" alt="foto github" ></a>
+        <a><img src="./imgs/iconGmail.png" alt=""  id="copy" id="copyToClipboard"></a>
+        
+    </section>
+    
+    <section class="story" id="verticalLine" id="sobreMim">
+        <hr>
+        <h3>SOBRE MIM</h3>
+        <h1>Sou um Desenvolvedor Front End</h1>
+        <p>Olá, sou o Alexandre, um jovem de 20 anos apaixonado por animais, jogos e tecnologia. Iniciei minha <br> trajetória na programação assim que me formei no Ensino Médio em 2022 e matriculei no curso de  <br>Análise  e Desenvolvimento de Sistemas, no qual me apaixonei pela sua flexibilidade de aprendizado <br>e possibilidades infinitas. Atualmente, me formei para o curso e continuo meu aprendizado através de <br>cursos e projetos pessoais, tenho como foco o Desenvolvimento front End, porém estou migrando para<br> aplicações full Stack</b> com <b>PHP</b>, <b>Node</b> e <b>Angular</b>. <br> Estou ansioso com a oportunidade de encontrar meu primeiro emprego como desenvolvedor!</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <div> <h1>SKILLS</h1> </div>
+        <div class="conteinerImgSkills">
+            <div> <img src="./imgs/iconHtml.png" alt=""><p>HTML</p></div>
+            <div> <img src="./imgs/iconCss.png" alt=""><p>CSS</p></div>
+            <div> <img src="./imgs/iconJavascript.png" alt=""><p>JavaScript</p></div>
+            <div> <img src="./imgs/iconPhp.png" alt=""><P>PHP</P></div>
+            <div> <img src="./imgs/iconGit.png" alt=""><p>Git</p></div>
+            <div> <img src="./imgs/iconAngular.png" alt=""><p>Angular</p> </div>
+            <div> <img src="./imgs/iconNode.png" alt=""><p>NodeJs</p> </div>
+            <div> <img src="./imgs/iconSql.png" alt=""><p>SQL</p></div>
+        </div>
+    </section>
+
+    <h1 style="color:white;  font-family: Arial, Helvetica, sans-serif;" id="Meusprojetos">Meus Projetos</h1>
+
+    <section class="portifolio" id="projetos">
+        <div>
+            <img src="./imgs/noImageLogo.png" alt="" height="260px" width="395px">
+        </div>
+        <div style="margin-left: 10px;">
+            <div class="conteinerImgSkillsProject">
+                <h2><b>Nome projeto</b></h2>
+                    <div class="justifyImgProject">
+                <img src="./imgs/noImageLogo.png" alt="" width="50px" height="20px">
+                <img src="./imgs/noImageLogo.png" alt="" width="50px" height="20px">
+                    </div>
+            </div>
+        <p>descrição: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente amet, distinctio aliquid dolor consectetur voluptatem deserunt, expedita quibusdam, in natus veritatis quod nulla error quidem porro. Vitae dolorem libero similique!</p>
+        <div class="conteinerbuttonProjectBar">
+         <div>
+            <a href="" class="btnProjectBar" id="btnProjectView"> Ver Projeto </a>
+            <a href="" class="btnProjectBar" id="btnRepoView">  < Repositório /> </a>
+         </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <section class="portifolio" >
+        <div>
+            <img src="./imgs/noImageLogo.png" alt="" height="260px" width="395px">
+        </div>
+        <div style="margin-left: 10px;">
+            <div class="conteinerImgSkillsProject">
+                <h2><b>Nome projeto</b></h2>
+                    <div class="justifyImgProject">
+                <img src="./imgs/noImageLogo.png" alt="" width="50px" height="20px">
+                <img src="./imgs/noImageLogo.png" alt="" width="50px" height="20px">
+                    </div>
+            </div>
+        <p>descrição: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente amet, distinctio aliquid dolor consectetur voluptatem deserunt, expedita quibusdam, in natus veritatis quod nulla error quidem porro. Vitae dolorem libero similique!</p>
+        <div class="conteinerbuttonProjectBar">
+         <div>
+            <a href="" class="btnProjectBar" id="btnProjectView"> Ver Projeto </a>
+            <a href="" class="btnProjectBar" id="btnRepoView">  < Repositório /> </a>
+         </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <section class="portifolio">
+        <div class="imgNo">
+            <img src="./imgs/noImageLogo.png" alt="" height="260px" width="395px">
+        </div>
+        <div style="margin-left: 10px;">
+            <div class="conteinerImgSkillsProject">
+                <h2><b>Nome projeto</b></h2>
+                    <div class="justifyImgProject">
+                <img src="./imgs/noImageLogo.png" alt="" width="50px" height="20px">
+                <img src="./imgs/noImageLogo.png" alt="" width="50px" height="20px">
+                    </div>
+            </div>
+        <p>descrição: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente amet, distinctio aliquid dolor consectetur voluptatem deserunt, expedita quibusdam, in natus veritatis quod nulla error quidem porro. Vitae dolorem libero similique!</p>
+        <div class="conteinerbuttonProjectBar">
+         <div>
+            <a href="" class="btnProjectBar" id="btnProjectView"> Ver Projeto </a>
+            <a href="" class="btnProjectBar" id="btnRepoView">  < Repositório /> </a>
+         </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll' , function(){
+            let scroll = document.querySelector('.scrollTop')
+            scroll.classList.toggle('active', window.scrollY > 450)
+        })
+
+        function backTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+</body>
+</html>
