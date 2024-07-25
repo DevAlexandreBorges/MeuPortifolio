@@ -34,12 +34,12 @@ window.onload = function () {
     };
 </script>
 <body>
-
+    <div class="conteinerProject">
     <nav class="navBar"> 
-        <a href="#projetos">PROJETOS</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#sobreMim">SOBRE</a>
         <a>HOME</a>
+        <a href="#sobreMim">SOBRE</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projetos">PROJETOS</a>
     </nav>
 
     <section class="aboutMe">
@@ -50,16 +50,16 @@ window.onload = function () {
 
         <h3 >Olá, me chamo Alexandre Borges Gonçalves</h3>
         <div class="contatMePerfil">
-            <h1  id="h1Name" style="font-size: 45px; "> DESENVOLVEDOR  <br> FRONT-END </h1>   
+            <h1  id="h1Name" > DESENVOLVEDOR  <br> FRONT-END </h1>   
         <img src="./imgs/fotoPerfil.jpg" id="imgPerfil" style="margin-left: auto; margin-right: 60px;">
         </div>
-        <div class="hide" id="copyFunction">
+            <div class="hide" id="copyFunction">
             <p><b>Copiado Email para área de transferência!</b></p>
             </div>
-        <a href="https://www.linkedin.com/in/alexandreborgesgonçalves/" target="_blank"><img src="./imgs/iconLinkedin.png" alt="foto do linkedin" ></a>
-        <a href="https://github.com/DevAlexandreBorges" target="_blank"><img src="./imgs/iconGithub.png" alt="foto github" ></a>
-        <a><img src="./imgs/iconGmail.png" alt=""  id="copy" id="copyToClipboard"></a>
-        
+        <a href="https://www.linkedin.com/in/alexandreborgesgonçalves/" target="_blank"><img src="./imgs/iconLinkedin.png" alt="logo linkedin" ></a>
+        <a href="https://github.com/DevAlexandreBorges" target="_blank"><img src="./imgs/iconGithub.png" alt="logo github" ></a>
+        <a><img src="./imgs/iconGmail.png" alt="logo Email"  id="copy" id="copyToClipboard"></a>
+        <a href="https://wa.me/5516991101460" target="_blank"><img src="imgs/iconWpp.png" alt="logo WhatsApp"></a>
     </section>
     
     <section class="story" id="verticalLine" id="sobreMim">
@@ -87,7 +87,7 @@ window.onload = function () {
 
     <section class="portifolio" id="projetos">
         <div>
-            <img src="imgs/fotoProjetoWeform.png" alt="" height="260px" width="500px">
+            <img src="imgs/fotoProjetoWeform.png" alt=" foto capa do projeto WeForm" id="imgWiHei">
         </div>
         <div style="margin-left: 10px;">
             <div class="conteinerImgSkillsProject">
@@ -112,7 +112,7 @@ window.onload = function () {
     
     <section class="portifolio" >
         <div>
-            <img src="./imgs/noImageLogo.png" alt="" height="260px" width="395px">
+            <img src="./imgs/noImageLogo.png"  id="imgWiHei" alt="">
         </div>
         <div style="margin-left: 10px;">
             <div class="conteinerImgSkillsProject">
@@ -135,7 +135,7 @@ window.onload = function () {
     
     <section class="portifolio">
         <div class="imgNo">
-            <img src="./imgs/noImageLogo.png" alt="" height="260px" width="395px">
+            <img src="./imgs/noImageLogo.png" id="imgWiHei" alt="">
         </div>
         <div style="margin-left: 10px;">
             <div class="conteinerImgSkillsProject">
@@ -154,7 +154,7 @@ window.onload = function () {
         </div>
         </div>
     </section>
-
+</div>
     <script>
         window.addEventListener('scroll' , function(){
             let scroll = document.querySelector('.scrollTop')

@@ -20,6 +20,13 @@ a{
          #0b592a ,
          #002b00 
     )
+
+}
+.conteinerProject{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
 }
 .scrollTop{
     outline: none;
@@ -50,23 +57,30 @@ a{
     opacity: 1;
     visibility: visible;
 }
+#imgWiHei{
+    height: 260px;
+    width: 500px;
+}
 .navBar{
     background-color: rgb(23, 23, 23);
-    overflow: hidden;
     margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    height: 50px;
+    margin-bottom: 10px;
+
+    text-align: right;
+    align-content: center;
+    
 }   
 .navBar a{
-    float: right;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  
+  padding: 10px 15px;
   text-decoration: none;
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif
-  
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin-top: 100000px;
+
 }
 .navBar a:hover{
     background-color: #ddd;
@@ -81,9 +95,8 @@ a{
     background-color: rgb(23, 23, 23);
     color: #f2f2f2; ;
     margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+   
+    margin-bottom: 10px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 17px;
@@ -98,6 +111,7 @@ a{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 45px;
 }
 .contatMePerfil{
     display: flex;
@@ -113,10 +127,9 @@ a{
 .story{
     background-color: rgb(23, 23, 23);
     color: #f2f2f2; ;
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+   
+    margin-bottom: 10px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -134,10 +147,9 @@ a{
 .skills{
     background-color: rgb(23, 23, 23);
     color: #f2f2f2; ;
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+ 
+    margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .skills h1{
@@ -156,17 +168,14 @@ a{
 .portifolio{
     background-color: rgb(23, 23, 23);
     color: #f2f2f2; ;
-    margin-top: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+  
+    margin-bottom: 10px;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
 }
-#Meusprojetos{
-    margin-left: 200px;
-}
+
 .conteinerImgSkillsProject{
     display: flex;
     flex-direction: row;
@@ -232,21 +241,19 @@ html{
   @media (max-width: 400px) {
     .navBar {
         margin: 10px;
-        flex-direction: column;
-        align-items: center;
     }
     .navBar a {
-        float: right;
-        display: block;
-        text-align: center;
         padding: 10px;
+    }
+    #h1Name{
+        font-size: 35px;
     }
     .aboutMe, .story, .skills, .portifolio {
         margin: 3px;
         margin-bottom: 15px;
     }
     .story hr{
-        height: 460px;
+        height: 570px;
     }
     .contatMePerfil {
         flex-direction: column;
@@ -265,6 +272,10 @@ html{
         flex-wrap: wrap;
         gap: 0 5px;
     }
+    #imgWiHei{
+        width: 350px;
+        height: 200px;
+    }
     .portifolio {
         flex-direction: column;
         align-items: center;
@@ -281,7 +292,7 @@ html{
         margin-top: 30px;
         margin-bottom: 20px;
     }
-#Meusprojetos{
-   margin-left: 20px;
-}
+    #Meusprojetos{
+        margin-left: 20px;
+    }
 }
