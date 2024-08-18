@@ -235,7 +235,7 @@ html {
     padding: 10px;
   }
   #h1Name {
-    font-size: 35px;
+    font-size: 32px;
   }
   .aboutMe,
   .story,
@@ -265,7 +265,7 @@ html {
     gap: 0 5px;
   }
   #imgWiHei {
-    width: 350px;
+    width: 200px;
     height: 200px;
   }
   .portifolio {
